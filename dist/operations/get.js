@@ -24,7 +24,7 @@ class GetOperation {
         return validationResult.value;
     }
     async execute(input) {
-        const ddb = helpers_1.createClient(input.region);
+        const ddb = (0, helpers_1.createClient)(input.region);
         const res = await ddb.get({
             TableName: input.table,
             Key: input.key,

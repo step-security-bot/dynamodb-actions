@@ -23,7 +23,7 @@ class DeleteOperation {
         return validationResult.value;
     }
     async execute(input) {
-        const ddb = helpers_1.createClient(input.region);
+        const ddb = (0, helpers_1.createClient)(input.region);
         await ddb.delete({
             TableName: input.table,
             Key: input.key,

@@ -31,7 +31,7 @@ class PutOperation {
         return validationResult.value;
     }
     async execute(input) {
-        const ddb = helpers_1.createClient(input.region);
+        const ddb = (0, helpers_1.createClient)(input.region);
         const item = input.item || await this.read(input.file);
         await ddb.put({
             TableName: input.table,

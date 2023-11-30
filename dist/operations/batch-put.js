@@ -33,7 +33,7 @@ class BatchPutOperation {
     }
     async execute(input) {
         var _a, _b;
-        const ddb = helpers_1.createClient(input.region);
+        const ddb = (0, helpers_1.createClient)(input.region);
         const items = input.items || await this.read(input.files);
         const chunks = this.chunk(items, 20);
         for (const chunk of chunks) {

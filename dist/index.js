@@ -12,13 +12,13 @@ const processor = new processor_1.Processor();
         region: core.getInput("region"),
         table: core.getInput("table"),
         // Get / Delete Operation
-        key: helpers_1.forgivingJSONParse(core.getInput("key")),
-        consistent: helpers_1.forgivingJSONParse(core.getInput("consistent")),
+        key: (0, helpers_1.forgivingJSONParse)(core.getInput("key")),
+        consistent: (0, helpers_1.forgivingJSONParse)(core.getInput("consistent")),
         // Put Operation
-        item: helpers_1.forgivingJSONParse(core.getInput("item")),
+        item: (0, helpers_1.forgivingJSONParse)(core.getInput("item")),
         file: core.getInput("file"),
         // BatchPut Operation
-        items: helpers_1.forgivingJSONParse(core.getInput("items")),
+        items: (0, helpers_1.forgivingJSONParse)(core.getInput("items")),
         files: core.getInput("files"),
     };
     const output = await processor.process(input);
