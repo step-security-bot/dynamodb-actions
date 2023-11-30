@@ -25,7 +25,7 @@ jobs:
     steps:
       - name: Get DynamoDB Item
         id: config
-        uses: step-security/dynamodb-actions@v1.0.0
+        uses: step-security/dynamodb-actions@v1
         env:
           AWS_DEFAULT_REGION: us-east-1
           AWS_REGION: us-east-1
@@ -83,7 +83,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Put DynamoDB Item
-        uses: step-security/dynamodb-actions@v1.0.0
+        uses: step-security/dynamodb-actions@v1
         env:
           AWS_DEFAULT_REGION: us-east-1
           AWS_REGION: us-east-1
@@ -115,7 +115,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Put DynamoDB Item
-        uses: step-security/dynamodb-actions@v1.0.0
+        uses: step-security/dynamodb-actions@v1
         env:
           AWS_DEFAULT_REGION: us-east-1
           AWS_REGION: us-east-1
@@ -168,7 +168,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Put DynamoDB Item
-        uses: step-security/dynamodb-actions@v1.0.0
+        uses: step-security/dynamodb-actions@v1
         env:
           AWS_DEFAULT_REGION: us-east-1
           AWS_REGION: us-east-1
@@ -209,7 +209,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Put DynamoDB Item
-        uses: step-security/dynamodb-actions@v1.0.0
+        uses: step-security/dynamodb-actions@v1
         env:
           AWS_DEFAULT_REGION: us-east-1
           AWS_REGION: us-east-1
@@ -258,7 +258,7 @@ jobs:
     timeout-minutes: 5
     steps:
       - name: Delete DynamoDB Item
-        uses: step-security/dynamodb-actions@v1.0.0
+        uses: step-security/dynamodb-actions@v1
         env:
           AWS_DEFAULT_REGION: us-east-1
           AWS_REGION: us-east-1
