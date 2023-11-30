@@ -25,7 +25,7 @@ jobs:
         env:
           DYNAMODB_ENDPOINT: http://dynamodb:8000
       - name: Publish
-        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: npx semantic-release
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}

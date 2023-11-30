@@ -2,7 +2,7 @@ name: example
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   job:
     runs-on: ubuntu-latest
